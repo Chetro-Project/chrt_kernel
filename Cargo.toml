@@ -1,0 +1,15 @@
+[package]
+name = "rt-kernel"
+version = "0.1.0"
+authors = ["Haruka Sato <csta19097@g.nihon-u.ac.jp>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.dev]
+panic = "abort"
